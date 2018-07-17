@@ -2,7 +2,7 @@ clickMe.addEventListener('click', function(event){
   $(popover).toggle();
   event.stopPropagation();
   setTimeout(function(){
-    $(document.body).one('click', function(){
+    $(document).one('click', function(){
       $(popover).hide();
     });
   }, 0);
